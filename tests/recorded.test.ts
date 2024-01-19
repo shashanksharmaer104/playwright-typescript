@@ -17,4 +17,5 @@ test('test', async ({ page }) => {
   await page.hover("(//*[contains(text(),'My account')])[2]");
   await page.getByRole('link', { name: 'Logout', exact: true }).click();
   await page.getByRole('heading', { name: ' Account Logout' }).click();
+  await expect(page).toHaveURL("https://ecommerce-playground.lambdatest.io/index.php?route=account/logout");
 });
