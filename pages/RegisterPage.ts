@@ -32,10 +32,13 @@ export default class RegisterPage {
     }
 
     async clickTermsAndConditions() {
-        await this.page.click("#input-agree");
+        await this.page.click("//label[@for='input-agree']");
     }
 
     async clickContinueToRegister() {
-        await this.page.click("input[value=Continue]");
+        await Promise.all([
+            this.page.waitForNavigation({waitUntil: "networkidle"}),
+            await this.page.click("input[value=Continue]")
+        ]);
     }
 }
