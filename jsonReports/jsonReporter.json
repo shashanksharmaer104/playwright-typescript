@@ -69,7 +69,7 @@
         {
           "title": "Page Object Model test demo",
           "file": "pomtest/addtocart.test.ts",
-          "line": 10,
+          "line": 9,
           "column": 6,
           "specs": [
             {
@@ -87,12 +87,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 12196,
+                      "duration": 8888,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-02-07T13:07:48.000Z",
+                      "startTime": "2024-02-07T13:26:14.016Z",
                       "attachments": []
                     }
                   ],
@@ -101,7 +101,7 @@
               ],
               "id": "f7dcbb3678d3c9da9ecf-c72e35857bbc4921b54b",
               "file": "pomtest/addtocart.test.ts",
-              "line": 11,
+              "line": 10,
               "column": 9
             },
             {
@@ -119,12 +119,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 5937,
+                      "duration": 9577,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-02-07T13:08:00.905Z",
+                      "startTime": "2024-02-07T13:26:23.673Z",
                       "attachments": []
                     }
                   ],
@@ -133,7 +133,7 @@
               ],
               "id": "f7dcbb3678d3c9da9ecf-d68c330c6687aa8dc802",
               "file": "pomtest/addtocart.test.ts",
-              "line": 27,
+              "line": 26,
               "column": 9
             },
             {
@@ -151,12 +151,12 @@
                     {
                       "workerIndex": 0,
                       "status": "passed",
-                      "duration": 18091,
+                      "duration": 16061,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-02-07T13:08:06.842Z",
+                      "startTime": "2024-02-07T13:26:33.251Z",
                       "attachments": []
                     }
                   ],
@@ -165,7 +165,7 @@
               ],
               "id": "f7dcbb3678d3c9da9ecf-10d115fdd77b73c70465",
               "file": "pomtest/addtocart.test.ts",
-              "line": 37,
+              "line": 36,
               "column": 9
             }
           ]
@@ -175,8 +175,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-02-07T13:07:47.794Z",
-    "duration": 37214.631,
+    "startTime": "2024-02-07T13:26:13.806Z",
+    "duration": 35560.596,
     "expected": 3,
     "skipped": 0,
     "unexpected": 0,

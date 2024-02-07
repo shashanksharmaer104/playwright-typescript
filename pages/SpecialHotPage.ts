@@ -9,9 +9,8 @@ export default class SpecialHotPage {
     }
 
     async addFirstProductToTheCart() {
-        await this.page.locator("//img[@title='HTC Touch HD']").first().hover();
-
-        await this.page.locator("//button[@title='Add to Cart']").first().click();
+        await this.page.locator("//img[@title='HTC Touch HD']").first().hover(),
+        await this.page.locator("//button[@title='Add to Cart']").first().click()
     }
 
     async isToastVisible() {

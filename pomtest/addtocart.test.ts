@@ -3,9 +3,8 @@ import RegisterPage from "../pages/RegisterPage";
 import LoginPage from "../pages/LoginPage";
 import SpecialHotPage from "../pages/SpecialHotPage";
 import HomePage from "../pages/HomePage";
-import { describe } from "node:test";
 
-const email = "shasha0000@mailinator.com";
+const email = "shasha00010@mailinator.com";
 const password = "Password@1234";
 test.describe("Page Object Model test demo", async () => {
     test("Register test_01",async ( {page, baseURL} ) => {
@@ -44,7 +43,7 @@ test.describe("Page Object Model test demo", async () => {
         await homepage.clickOnSpecialHotMenu();
     
         await special.clickComponentsFilter();
-        await page.waitForTimeout(3000); // waits for 4 seconds. Hard wait added for testing purpose only
+        await page.waitForTimeout(5000); // waits for 4 seconds. Hard wait added for testing purpose only
         await special.addFirstProductToTheCart();
         const isCartVisible = await special.isToastVisible();
         expect(isCartVisible).toBeVisible();
