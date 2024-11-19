@@ -5,7 +5,7 @@ const config: PlaywrightTestConfig = {
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
         browserName: "firefox",
-        headless: false,
+        headless: true,
         launchOptions: {
             args: ['--start-maximized']
         },
