@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
+    sudo apt install firefox
     npm i && npx playwright install
     npm test
   displayName: 'npm install and test'
