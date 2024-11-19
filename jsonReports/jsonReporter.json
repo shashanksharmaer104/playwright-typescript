@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/shashanksharma/Projects/playwright-typescript/playwright.config.ts",
-    "rootDir": "/Users/shashanksharma/Projects/playwright-typescript",
+    "configFile": "/Users/shasharm18/Developer/automation-projects/playwright-typescript/playwright.config.ts",
+    "rootDir": "/Users/shasharm18/Developer/automation-projects/playwright-typescript",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -39,12 +39,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/shashanksharma/Projects/playwright-typescript/test-results",
+        "outputDir": "/Users/shasharm18/Developer/automation-projects/playwright-typescript/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "",
         "name": "",
-        "testDir": "/Users/shashanksharma/Projects/playwright-typescript",
+        "testDir": "/Users/shasharm18/Developer/automation-projects/playwright-typescript",
         "testIgnore": [],
         "testMatch": [
           "pomtest/addtocart.test.ts"
@@ -55,7 +55,7 @@
     "shard": null,
     "updateSnapshots": "missing",
     "version": "1.40.1",
-    "workers": 4,
+    "workers": 6,
     "webServer": null
   },
   "suites": [
@@ -74,7 +74,7 @@
           "specs": [
             {
               "title": "Register test_01",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -86,17 +86,25 @@
                   "results": [
                     {
                       "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 8888,
-                      "errors": [],
+                      "status": "failed",
+                      "duration": 840,
+                      "error": {
+                        "message": "TargetClosedError: Target page, context or browser has been closed",
+                        "stack": "TargetClosedError: Target page, context or browser has been closed\n"
+                      },
+                      "errors": [
+                        {
+                          "message": "TargetClosedError: Target page, context or browser has been closed\n\n\n"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-02-07T13:26:14.016Z",
+                      "startTime": "2024-11-19T07:41:29.622Z",
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "f7dcbb3678d3c9da9ecf-c72e35857bbc4921b54b",
@@ -106,7 +114,7 @@
             },
             {
               "title": "Login test_02",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -117,18 +125,26 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 9577,
-                      "errors": [],
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 21,
+                      "error": {
+                        "message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/shasharm18/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --start-maximized --user-data-dir=/var/folders/5h/8jj3ndtd7xj7l2klkyy67wc00000gn/T/playwright_chromiumdev_profile-biLiUfxZeVmO --remote-debugging-pipe --no-startup-window\n<launched> pid=9812\n[pid=9812][err] [9812:259:1119/131132.626250:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\n[pid=9812][err] [9812:34051:1119/131132.662832:ERROR:trust_store_mac.cc(750)] Error parsing certificate:\n[pid=9812][err] ERROR: GeneralNames is a sequence of 0 elements\n[pid=9812][err] ERROR: Failed parsing subjectAltName\n[pid=9812][err] \n[pid=9812][err] [1119/131133.069313:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\nCall log:\n  \u001b[2m- <launching> /Users/shasharm18/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --start-maximized --user-data-dir=/var/folders/5h/8jj3ndtd7xj7l2klkyy67wc00000gn/T/playwright_chromiumdev_profile-biLiUfxZeVmO --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=9812\u001b[22m\n\u001b[2m  - [pid=9812][err] [9812:259:1119/131132.626250:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\u001b[22m\n\u001b[2m  - [pid=9812][err] [9812:34051:1119/131132.662832:ERROR:trust_store_mac.cc(750)] Error parsing certificate:\u001b[22m\n\u001b[2m  - [pid=9812][err] ERROR: GeneralNames is a sequence of 0 elements\u001b[22m\n\u001b[2m  - [pid=9812][err] ERROR: Failed parsing subjectAltName\u001b[22m\n\u001b[2m  - [pid=9812][err] \u001b[22m\n\u001b[2m  - [pid=9812][err] [1119/131133.069313:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\u001b[22m\n",
+                        "stack": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/shasharm18/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --start-maximized --user-data-dir=/var/folders/5h/8jj3ndtd7xj7l2klkyy67wc00000gn/T/playwright_chromiumdev_profile-biLiUfxZeVmO --remote-debugging-pipe --no-startup-window\n<launched> pid=9812\n[pid=9812][err] [9812:259:1119/131132.626250:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\n[pid=9812][err] [9812:34051:1119/131132.662832:ERROR:trust_store_mac.cc(750)] Error parsing certificate:\n[pid=9812][err] ERROR: GeneralNames is a sequence of 0 elements\n[pid=9812][err] ERROR: Failed parsing subjectAltName\n[pid=9812][err] \n[pid=9812][err] [1119/131133.069313:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\nCall log:\n  \u001b[2m- <launching> /Users/shasharm18/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --start-maximized --user-data-dir=/var/folders/5h/8jj3ndtd7xj7l2klkyy67wc00000gn/T/playwright_chromiumdev_profile-biLiUfxZeVmO --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=9812\u001b[22m\n\u001b[2m  - [pid=9812][err] [9812:259:1119/131132.626250:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\u001b[22m\n\u001b[2m  - [pid=9812][err] [9812:34051:1119/131132.662832:ERROR:trust_store_mac.cc(750)] Error parsing certificate:\u001b[22m\n\u001b[2m  - [pid=9812][err] ERROR: GeneralNames is a sequence of 0 elements\u001b[22m\n\u001b[2m  - [pid=9812][err] ERROR: Failed parsing subjectAltName\u001b[22m\n\u001b[2m  - [pid=9812][err] \u001b[22m\n\u001b[2m  - [pid=9812][err] [1119/131133.069313:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\u001b[22m\n\n"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n<launching> /Users/shasharm18/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --start-maximized --user-data-dir=/var/folders/5h/8jj3ndtd7xj7l2klkyy67wc00000gn/T/playwright_chromiumdev_profile-biLiUfxZeVmO --remote-debugging-pipe --no-startup-window\n<launched> pid=9812\n[pid=9812][err] [9812:259:1119/131132.626250:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\n[pid=9812][err] [9812:34051:1119/131132.662832:ERROR:trust_store_mac.cc(750)] Error parsing certificate:\n[pid=9812][err] ERROR: GeneralNames is a sequence of 0 elements\n[pid=9812][err] ERROR: Failed parsing subjectAltName\n[pid=9812][err] \n[pid=9812][err] [1119/131133.069313:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\nCall log:\n  \u001b[2m- <launching> /Users/shasharm18/Library/Caches/ms-playwright/chromium-1091/chrome-mac/Chromium.app/Contents/MacOS/Chromium --disable-field-trial-config --disable-background-networking --enable-features=NetworkService,NetworkServiceInProcess --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=ImprovedCookieControls,LazyFrameLoading,GlobalMediaControls,DestroyProfileOnBrowserClose,MediaRouter,DialMediaRouteProvider,AcceptCHFrame,AutoExpandDetailsElement,CertificateTransparencyComponentUpdater,AvoidUnnecessaryBeforeUnloadCheckSync,Translate,HttpsUpgrades --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --enable-use-zoom-for-dsf=false --no-sandbox --start-maximized --user-data-dir=/var/folders/5h/8jj3ndtd7xj7l2klkyy67wc00000gn/T/playwright_chromiumdev_profile-biLiUfxZeVmO --remote-debugging-pipe --no-startup-window\u001b[22m\n\u001b[2m  - <launched> pid=9812\u001b[22m\n\u001b[2m  - [pid=9812][err] [9812:259:1119/131132.626250:ERROR:policy_logger.cc(156)] :components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc(161) Cloud management controller initialization aborted as CBCM is not enabled. Please use the `--enable-chrome-browser-cloud-management` command line flag to enable it if you are not using the official Google Chrome build.\u001b[22m\n\u001b[2m  - [pid=9812][err] [9812:34051:1119/131132.662832:ERROR:trust_store_mac.cc(750)] Error parsing certificate:\u001b[22m\n\u001b[2m  - [pid=9812][err] ERROR: GeneralNames is a sequence of 0 elements\u001b[22m\n\u001b[2m  - [pid=9812][err] ERROR: Failed parsing subjectAltName\u001b[22m\n\u001b[2m  - [pid=9812][err] \u001b[22m\n\u001b[2m  - [pid=9812][err] [1119/131133.069313:WARNING:crash_report_exception_handler.cc(235)] UniversalExceptionRaise: (os/kern) failure (5)\u001b[22m\n\n\n\n"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-02-07T13:26:23.673Z",
+                      "startTime": "2024-11-19T07:41:32.184Z",
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "f7dcbb3678d3c9da9ecf-d68c330c6687aa8dc802",
@@ -138,7 +154,7 @@
             },
             {
               "title": "Add to cart test_03",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -149,18 +165,26 @@
                   "projectName": "",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 16061,
-                      "errors": [],
+                      "workerIndex": 2,
+                      "status": "failed",
+                      "duration": 927,
+                      "error": {
+                        "message": "TargetClosedError: Target page, context or browser has been closed",
+                        "stack": "TargetClosedError: Target page, context or browser has been closed\n"
+                      },
+                      "errors": [
+                        {
+                          "message": "TargetClosedError: Target page, context or browser has been closed\n\n\n"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2024-02-07T13:26:33.251Z",
+                      "startTime": "2024-11-19T07:41:33.558Z",
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "f7dcbb3678d3c9da9ecf-10d115fdd77b73c70465",
@@ -175,11 +199,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-02-07T13:26:13.806Z",
-    "duration": 35560.596,
-    "expected": 3,
+    "startTime": "2024-11-19T07:41:29.152Z",
+    "duration": 5918.358,
+    "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 3,
     "flaky": 0
   }
 }

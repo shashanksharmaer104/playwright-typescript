@@ -12,11 +12,11 @@ pool:
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: '20.x'
+    versionSpec: '19.x'
   displayName: 'Install Node.js'
 
 - script: |
-    sudo apt install firefox
+    sudo apt install firefox google-chrome-stable google-chrome-beta
     npm i && npx playwright install
     npm test
   displayName: 'npm install and test'
