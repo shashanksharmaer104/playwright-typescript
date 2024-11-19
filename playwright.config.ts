@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
     testMatch: ["pomtest/addtocart.test.ts"],
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
-        browserName: "chromium",
+        browserName: "firefox",
         headless: false,
         launchOptions: {
             args: ['--start-maximized']
@@ -14,13 +14,13 @@ const config: PlaywrightTestConfig = {
     },
     retries: 0,
     reporter: [
-    ["dot"], 
-    ["json", {
-        outputFile: "jsonReports/jsonReporter.json"
-    }], 
-    ["html", {
-        open: "never"
-    }]]
+        ["dot"],
+        ["json", {
+            outputFile: "jsonReports/jsonReporter.json"
+        }],
+        ["html", {
+            open: "never"
+        }]]
 };
 
 export default config;
