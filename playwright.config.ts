@@ -4,7 +4,7 @@ const config: PlaywrightTestConfig = {
     testMatch: ["pomtest/addtocart.test.ts"],
     use: {
         baseURL: "https://ecommerce-playground.lambdatest.io/index.php?",
-        browserName: "firefox",
+        browserName: "chromium",
         headless: true,
         launchOptions: {
             args: ['--start-maximized']
